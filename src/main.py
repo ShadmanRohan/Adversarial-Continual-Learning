@@ -65,11 +65,11 @@ def run(args, run_id):
 
         # Faster run but not deterministic:
         # torch.backends.cudnn.benchmark = True
-
+##########################################--WTFITS--##############################################################
         # To get deterministic results that match with paper at cost of lower speed:
         torch.backends.cudnn.deterministic = True
         torch.backends.cudnn.benchmark = False
-
+##################################################################################################################
     # Data loader
     print('Instantiate data generators and model...')
     dataloader = datagenerator.DatasetGen(args)
